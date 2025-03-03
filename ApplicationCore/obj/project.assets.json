@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "UsingMicrosoftNETSdk": false,

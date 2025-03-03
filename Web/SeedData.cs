@@ -56,7 +56,7 @@ public static class SeedData
                 incorrectAnswers: new List<string>() {"Sławomir Mentzen", "Donald Tusk", "Karol Nawrocki"})));
 
             quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 2, correctAnswer: "460", question: "Ile jest osób w sejmie?",
-                incorrectAnswers: new List<string>() {"452", "443", "447"})));
+                incorrectAnswers: new List<string>() {"452", "448", "437"})));
             
             quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 3, correctAnswer: "Donald Tusk", question: "Kto jest premierem Polski?",
                 incorrectAnswers: new List<string>() {"Andrzej Duda", "Rafał Trzaskowski", "Sławomir Mentzen"})));
