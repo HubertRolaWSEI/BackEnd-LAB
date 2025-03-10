@@ -1,13 +1,13 @@
-using BlazorChat;
 using BlazorChat.Components;
-
+using BlazorChat;
+using ApplicationCore.ChatService;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSignalR();  
+builder.Services.AddSignalR(); 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
+builder.Services.AddSingleton<IChatUserService, ChatUserService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,6 +26,5 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
-
-app.MapHub<BlazorChatSampleHub>(BlazorChatSampleHub.HubUrl); 
+app.MapHub<BlazorChatSampleHub>(BlazorChatSampleHub.HubUrl);
 app.Run();

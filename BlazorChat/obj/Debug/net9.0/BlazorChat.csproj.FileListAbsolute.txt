@@ -84,3 +84,5 @@ C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\refint\Blaz
 C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\BlazorChat.pdb
 C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\BlazorChat.genruntimeconfig.cache
 C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\ref\BlazorChat.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\bin\Debug\net9.0\ApplicationCore.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\bin\Debug\net9.0\ApplicationCore.pdb

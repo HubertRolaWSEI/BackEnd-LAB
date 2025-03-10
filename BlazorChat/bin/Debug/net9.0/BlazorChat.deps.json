@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "BlazorChat/1.0.0": {
         "dependencies": {
+          "ApplicationCore": "1.0.0",
           "Microsoft.AspNetCore.SignalR.Client": "9.0.0"
         },
         "runtime": {
@@ -110,7 +111,15 @@
           }
         }
       },
-      "System.Threading.Channels/9.0.0": {}
+      "System.Threading.Channels/9.0.0": {},
+      "ApplicationCore/1.0.0": {
+        "runtime": {
+          "ApplicationCore.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -230,6 +239,11 @@
       "sha512": "sha512-hzACdIf1C+4Dqos5ijV404b94+LqfIC8nfS3mNpCDFWowb1N3PNfJPopneq32ahWlDeyaPZJqjBk76YFR69Rpg==",
       "path": "system.threading.channels/9.0.0",
       "hashPath": "system.threading.channels.9.0.0.nupkg.sha512"
+    },
+    "ApplicationCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

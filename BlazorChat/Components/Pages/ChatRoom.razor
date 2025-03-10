@@ -1,11 +1,10 @@
 @page "/chatroom"
 @inject NavigationManager navigationManager
-@using Microsoft.AspNetCore.SignalR.Client;
+@using ApplicationCore.ChatService
+@using Microsoft.AspNetCore.SignalR.Client
 @rendermode InteractiveServer
-
-
+@inject IChatUserService ChatUserService
 <h3>ChatRoom</h3>
-
 
 <h1>Blazor SignalR Chat Sample</h1>
 <hr />
@@ -28,13 +27,14 @@
 }
 else
 {
-    // banner to show current user
+    <!-- Banner z informacjami o użytkowniku -->
     <div class="alert alert-secondary mt-4" role="alert">
         <span class="oi oi-person mr-2" aria-hidden="true"></span>
         <span>You are connected as <b>@_username</b></span>
         <button class="btn btn-sm btn-warning ml-md-auto" @onclick="@DisconnectAsync">Disconnect</button>
     </div>
-    // display messages
+
+    <!-- Wyświetlanie wiadomości -->
     <div id="scrollbox">
         @foreach (var item in _messages)
         {
@@ -51,62 +51,67 @@ else
             }
         }
         <hr />
-        <textarea class="input-lg" placeholder="enter your comment" @bind="@_newMessage"></textarea>
+        <textarea class="input-lg" placeholder="Enter your comment" @bind="@_newMessage"></textarea>
         <button class="btn btn-default" @onclick="@(() => SendAsync(_newMessage))">Send</button>
+        <select class="form-select" @bind="@_to">
+            <option value="All">All</option>
+            @foreach (var user in ChatUserService.GetAll().Where(u => u.Username != _username))
+            {
+                <option value="@user.Username">@user.Username</option>
+            }
+        </select>
     </div>
 }
 
 @code {
-    // flag to indicate chat status
-    private bool _isChatting = false;
-
-    // name of the user who will be chatting
-    private string _username;
-
-    // on-screen message
-    private string _message;
-
-    // new message input
-    private string _newMessage;
-
-    // list of messages in chat
-    private List<Message> _messages = new List<Message>();
+    private string _to = "All";
+    private bool _isChatting = false;  // Czy użytkownik jest w trakcie czatowania
+    private string _username;  // Nazwa użytkownika
+    private string _message;  // Wiadomość błędu
+    private string _newMessage;  // Wiadomość do wysłania
+    private List<Message> _messages = new List<Message>();  // Lista wiadomości
+    private List<string> _users = new List<string>();  // Lista użytkowników online
 
     private string _hubUrl;
     private HubConnection _hubConnection;
 
+    // Funkcja do rozpoczęcia czatu
+    private void PrivateMessage(string name, string message)
+    {
+        _messages.Add(new Message(name, $"[Private]: {message}", false));
+        InvokeAsync(StateHasChanged);
+    }
     public async Task Chat()
     {
-        // check username is valid
         if (string.IsNullOrWhiteSpace(_username))
         {
             _message = "Please enter a name";
             return;
-        };
+        }
 
         try
         {
-            // Start chatting and force refresh UI.
             _isChatting = true;
             await Task.Delay(1);
 
-            // remove old messages if any
             _messages.Clear();
 
-            // Create the chat client
             string baseUrl = navigationManager.BaseUri;
-
-            _hubUrl = baseUrl.TrimEnd('/') + BlazorChatSampleHub.HubUrl;
+            _hubUrl = baseUrl.TrimEnd('/') + "/chat";  // Adres URL do huba SignalR
 
             _hubConnection = new HubConnectionBuilder()
                 .WithUrl(_hubUrl)
                 .Build();
 
             _hubConnection.On<string, string>("Broadcast", BroadcastMessage);
+            _hubConnection.On<string, string>("Private", PrivateMessage);// Nasłuchiwanie wiadomości broadcast
+            _hubConnection.On<List<string>>("UpdateUserList", UpdateUserList);  // Nasłuchiwanie aktualizacji listy użytkowników
+            _hubConnection.On<string, string>("ReceivePrivateMessage", ReceivePrivateMessage);  // Nasłuchiwanie wiadomości prywatnych
 
             await _hubConnection.StartAsync();
-
-            await SendAsync($"[Notice] {_username} joined chat room.");
+            await _hubConnection.SendAsync("AddUser", _username);
+            ChatUserService.Add(_hubConnection.ConnectionId, _username);// Wysyłanie nazwy użytkownika do huba
+            await SendAsync($"[Notice] {_username} joined chat room.");  // Wiadomość powitalna
         }
         catch (Exception e)
         {
@@ -115,40 +120,76 @@ else
         }
     }
 
+    // Funkcja do wyświetlania wiadomości
     private void BroadcastMessage(string name, string message)
     {
         bool isMine = name.Equals(_username, StringComparison.OrdinalIgnoreCase);
-
         _messages.Add(new Message(name, message, isMine));
-
-        // Inform blazor the UI needs updating
-        InvokeAsync(StateHasChanged);
+        InvokeAsync(StateHasChanged);  // Przeładowanie UI
     }
 
+    // Funkcja do aktualizacji listy użytkowników
+    private void UpdateUserList(List<string> users)
+    {
+        _users = users;
+        InvokeAsync(StateHasChanged);  // Przeładowanie UI
+    }
+
+    // Funkcja do odbierania prywatnych wiadomości
+    private void ReceivePrivateMessage(string fromUsername, string message)
+    {
+        _messages.Add(new Message(fromUsername, message, false));
+        InvokeAsync(StateHasChanged);  // Przeładowanie UI
+    }
+
+    // Funkcja do wysyłania prywatnych wiadomości
+    private async Task SendPrivateMessage(string recipientUsername)
+    {
+        var message = _newMessage;
+        if (string.IsNullOrWhiteSpace(message)) return;
+
+        await _hubConnection.SendAsync("SendPrivateMessage", recipientUsername, message);  // Wysyłanie wiadomości do wybranego użytkownika
+        _newMessage = string.Empty;
+    }
+
+    // Funkcja do rozłączenia użytkownika
     private async Task DisconnectAsync()
     {
         if (_isChatting)
         {
-            await SendAsync($"[Notice] {_username} left chat room.");
-
+            await SendAsync($"[Notice] {_username} left chat room.");  // Wiadomość informująca o opuszczeniu czatu
             await _hubConnection.StopAsync();
             await _hubConnection.DisposeAsync();
-
+            ChatUserService.RemoveByName(_username);
             _hubConnection = null;
             _isChatting = false;
         }
     }
 
+    // Funkcja do wysyłania wiadomości (wszystkim użytkownikom)
     private async Task SendAsync(string message)
     {
         if (_isChatting && !string.IsNullOrWhiteSpace(message))
         {
-            await _hubConnection.SendAsync("Broadcast", _username, message);
-
+            if (_to == "All")
+            {
+                await _hubConnection.SendAsync("Broadcast", _username, message);
+            }
+            else
+            {
+                var connectionId = ChatUserService.GetConnectionIdByName(_to);
+                if (!string.IsNullOrEmpty(connectionId))
+                {
+                    await _hubConnection.SendAsync("SendPrivateMessage", _to, message); // Use existing hub method
+                    _messages.Add(new Message(_username, $"[Private to {_to}]: {message}", true)); // Show sent private message
+                    InvokeAsync(StateHasChanged);
+                }
+            }
             _newMessage = string.Empty;
         }
     }
 
+    // Klasa pomocnicza do wiadomości
     private class Message
     {
         public Message(string username, string body, bool mine)
@@ -161,9 +202,7 @@ else
         public string Username { get; set; }
         public string Body { get; set; }
         public bool Mine { get; set; }
-
-        public bool IsNotice => Body.StartsWith("[Notice]");
-
-        public string CSS => Mine ? "sent" : "received";
+        public bool IsNotice => Body.StartsWith("[Notice]");  // Sprawdzanie, czy to jest wiadomość powitalna
+        public string CSS => Mine ? "sent" : "received";  // Klasa CSS dla wiadomości (czyja to wiadomość)
     }
 }
