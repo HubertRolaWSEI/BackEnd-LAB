@@ -37,13 +37,13 @@ public static class SeedData
             
             quizRepo.Add(new Quiz(id: 2, items: quizItems2, title: "Piłka Nożna"));
             
-            quizItems2.Add(quizItemRepo.Add(new QuizItem(id: 1, correctAnswer: "Real Madryt", question: "Najlepszy klub w historii piłki nożnej",
+            quizItems2.Add(quizItemRepo.Add(new QuizItem(id: 4, correctAnswer: "Real Madryt", question: "Najlepszy klub w historii piłki nożnej",
                 incorrectAnswers: new List<string>() {"Termalica Brukbet Nieciecza", "Bayern Monachium", "Manchester City"})));
 
-            quizItems2.Add(quizItemRepo.Add(new QuizItem(id: 2, correctAnswer: "15", question: "Jaka jest największa liczba zdobytych lig mistrzów przez jeden klub?",
+            quizItems2.Add(quizItemRepo.Add(new QuizItem(id: 5, correctAnswer: "15", question: "Jaka jest największa liczba zdobytych lig mistrzów przez jeden klub?",
                 incorrectAnswers: new List<string>() {"2", "3", "7"})));
             
-            quizItems2.Add(quizItemRepo.Add(new QuizItem(id: 3, correctAnswer: "11", question: "Ilu piłkarzy znajduje się na boisku w wyjściowej jedenastce?",
+            quizItems2.Add(quizItemRepo.Add(new QuizItem(id: 6, correctAnswer: "11", question: "Ilu piłkarzy znajduje się na boisku w wyjściowej jedenastce?",
                 incorrectAnswers: new List<string>() {"9", "10", "12"})));
             
             
@@ -52,13 +52,13 @@ public static class SeedData
             
             quizRepo.Add(new Quiz(id: 3, items: quizItems3, title: "Sejm"));
             
-            quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 1, correctAnswer: "Andrzej Duda", question: "Kto jest prezydentem Polski?",
+            quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 7, correctAnswer: "Andrzej Duda", question: "Kto jest prezydentem Polski?",
                 incorrectAnswers: new List<string>() {"Sławomir Mentzen", "Donald Tusk", "Karol Nawrocki"})));
 
-            quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 2, correctAnswer: "460", question: "Ile jest osób w sejmie?",
+            quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 8, correctAnswer: "460", question: "Ile jest osób w sejmie?",
                 incorrectAnswers: new List<string>() {"452", "443", "447"})));
             
-            quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 3, correctAnswer: "Donald Tusk", question: "Kto jest premierem Polski?",
+            quizItems3.Add(quizItemRepo.Add(new QuizItem(id: 9, correctAnswer: "Donald Tusk", question: "Kto jest premierem Polski?",
                 incorrectAnswers: new List<string>() {"Andrzej Duda", "Rafał Trzaskowski", "Sławomir Mentzen"})));
             
             

@@ -8698,11 +8698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\UnitTest\\UnitTest.csproj",
+      "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\UnitTest\\obj\\",
+      "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "UsingMicrosoftNETSdk": false,
@@ -8720,22 +8720,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
             }
           }
         },
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

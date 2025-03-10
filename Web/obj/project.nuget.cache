@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2qbSWauC/+E=",
+  "dgSpecHash": "Ee2jXViY0wg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\huber\\Desktop\\wsei-backend-lab-lab-01\\Web\\Web.csproj",
+  "projectFilePath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huber\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\huber\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
