@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChat", "BlazorChat\BlazorChat.csproj", "{D1D20E5B-2B28-4AB1-9599-257EEF05EF51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{D75C00D0-7D86-4B8E-AC6D-5CB8889527F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{D1D20E5B-2B28-4AB1-9599-257EEF05EF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1D20E5B-2B28-4AB1-9599-257EEF05EF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1D20E5B-2B28-4AB1-9599-257EEF05EF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75C00D0-7D86-4B8E-AC6D-5CB8889527F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75C00D0-7D86-4B8E-AC6D-5CB8889527F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75C00D0-7D86-4B8E-AC6D-5CB8889527F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75C00D0-7D86-4B8E-AC6D-5CB8889527F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

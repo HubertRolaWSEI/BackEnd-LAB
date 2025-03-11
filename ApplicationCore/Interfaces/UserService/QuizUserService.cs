@@ -5,13 +5,16 @@ using ApplicationCore.Specifications;
 
 namespace BackendLab01;
 
-public class QuizUserService: IQuizUserService
+public class QuizUserService : IQuizUserService
 {
     private readonly IGenericRepository<Quiz, int> quizRepository;
     private readonly IGenericRepository<QuizItem, int> itemRepository;
     private readonly IGenericRepository<QuizItemUserAnswer, string> answerRepository;
 
-    public QuizUserService(IGenericRepository<Quiz, int> quizRepository, IGenericRepository<QuizItemUserAnswer, string> answerRepository, IGenericRepository<QuizItem, int> itemRepository)
+    public QuizUserService(
+        IGenericRepository<Quiz, int> quizRepository,
+        IGenericRepository<QuizItemUserAnswer, string> answerRepository,
+        IGenericRepository<QuizItem, int> itemRepository)
     {
         this.quizRepository = quizRepository;
         this.answerRepository = answerRepository;
@@ -35,13 +38,13 @@ public class QuizUserService: IQuizUserService
         answerRepository.Add(userAnswer);
     }
 
-
     public List<QuizItemUserAnswer> GetUserAnswersForQuiz(int quizId, int userId)
     {
-        // return answerRepository.FindAll()
-        //     .Where(x => x.QuizId == quizId)
-        //     .Where(x => x. UserId == userId)
-        //     .ToList();
         return answerRepository.FindBySpecification(new QuizItemsForQuizIdFilledByUser(quizId, userId)).ToList();
+    }
+
+    public IEnumerable<Quiz> FindAllQuizzes()
+    {
+        return quizRepository.FindAll();
     }
 }
