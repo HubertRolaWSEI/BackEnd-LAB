@@ -1,30 +1,21 @@
 using ApplicationCore.Models.QuizAggregate;
+using WebAPI.Dto;
 
-namespace WebApi.Dto;
-
+namespace WebAPI.Dto;
+ 
 public class QuizDto
 {
     public int Id { get; set; }
     public string Title { get; set; }
     public List<QuizItemDto> Items { get; set; }
-
-    public QuizDto(int id, string title, List<QuizItemDto> items)
+ 
+    public static QuizDto of(Quiz quiz)
     {
-        Id = id;
-        Title = title;
-        Items = items;
-    }
-
-    public static QuizDto Of(Quiz quiz)
-    {
-
-        var items = quiz.Items.Select(QuizItemDto.Of).ToList();
-
-
-        return new QuizDto(
-            id: quiz.Id,
-            title: quiz.Title,
-            items: items
-        );
+        return new QuizDto
+        {
+            Id = quiz.Id,
+            Title = quiz.Title,
+            Items = quiz.Items.Select(QuizItemDto.of).ToList()
+        };
     }
 }

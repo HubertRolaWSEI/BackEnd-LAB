@@ -1,33 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\obj\\",
+        "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0",
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,9 +43,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -71,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0": {
           "targetAlias": "net9.0",
@@ -91,40 +85,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj": {
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
+        "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
         "projectName": "BlazorChat",
-        "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
-        "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\obj\\",
+        "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
+        "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -137,9 +126,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -169,50 +157,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0",
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           },
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -225,9 +208,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -254,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0": {
           "targetAlias": "net9.0",
@@ -280,56 +262,51 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj": {
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj",
         "projectName": "UnitTest",
-        "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj",
-        "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\UnitTest\\obj\\",
+        "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj",
+        "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0",
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
               }
             }
           },
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -342,9 +319,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -387,7 +363,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0": {
           "targetAlias": "net9.0",
@@ -429,52 +405,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\UnitTest\\UnitTest.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj"
               }
             }
           }
@@ -487,9 +458,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -519,56 +489,51 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj": {
+    "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
-        "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\obj\\",
+        "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0",
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
               }
             }
           },
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -581,9 +546,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -613,7 +577,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0": {
           "targetAlias": "net9.0",
@@ -642,7 +606,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

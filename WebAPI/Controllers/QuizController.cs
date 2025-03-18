@@ -1,9 +1,11 @@
+using ApplicationCore.Models.QuizAggregate;
 using BackendLab01;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Dto;
+using WebAPI.Dto;
+using WebAPI.Dto;
 
-namespace WebAPI.Controllers;
-
+namespace WebAPI.Controller;
+ 
 [ApiController]
 [Route("api/v1/quizzes")]
 public class QuizController : ControllerBase
@@ -17,39 +19,43 @@ public class QuizController : ControllerBase
 
     [HttpGet]
     [Route("{id}")]
-    public ActionResult<QuizDto> FindById(int id)
+    public async Task<ActionResult<QuizDto>> FindById(int id)
     {
         var quiz = _service.FindQuizById(id);
-        if (quiz == null)
+        if (quiz is null)
         {
             return NotFound();
         }
-        var quizDto = QuizDto.Of(quiz);
+
+        var quizDto = QuizDto.of(quiz);
         return Ok(quizDto);
     }
-
+    
     [HttpGet]
-    public ActionResult<IEnumerable<QuizDto>> FindAll()
+    public IEnumerable<QuizDto> FindAll()
     {
-        var quizzes = _service.FindAllQuizzes();
-        var quizDtos = quizzes.Select(QuizDto.Of).ToList();
-        return Ok(quizDtos);
+        return  _service.FindAllQuizzes().Select(u=>QuizDto.of(u));
     }
-
+    
     [HttpPost]
     [Route("{quizId}/items/{itemId}")]
-    public IActionResult SaveAnswer(int quizId, int itemId, [FromBody] QuizItemAnswerDto dto)
+    public IActionResult SaveAnswer([FromBody] QuizItemAnswerDto dto, [FromRoute] int quizId, [FromRoute] int itemId)
     {
         _service.SaveUserAnswerForQuiz(quizId, dto.UserId, itemId, dto.Answer);
-        return NoContent();
+
+        return NoContent(); // zwraca status HTTP 204, czyli poprawnie zapisano bez treści
     }
 
     [HttpGet]
-    [Route("{quizId}/results/{userId}")]
-    public ActionResult<QuizResultDto> GetQuizResult(int quizId, int userId)
+    [Route("{quizId}/users/{userId}/result")]
+    public ActionResult<UserQuizResultDto> GetQuizResultForUser(int quizId, int userId)
     {
-        var correctAnswersCount = _service.CountCorrectAnswersForQuizFilledByUser(quizId, userId);
-        var resultDto = QuizResultDto.Of(quizId, userId, correctAnswersCount);
+        int correctAnswers = _service.CountCorrectAnswersForQuizFilledByUser(quizId, userId);
+
+        var resultDto = new UserQuizResultDto(quizId, userId, correctAnswers);
+
         return Ok(resultDto);
     }
+
+
 }
