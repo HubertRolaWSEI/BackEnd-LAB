@@ -746,43 +746,49 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huber\\.nuget\\packages\\": {}
+    "D:\\Users\\hubert.rola\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\obj\\",
+      "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
-      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0",
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         },
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         }
@@ -795,8 +801,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      }
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -823,7 +830,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0": {
         "targetAlias": "net9.0",
@@ -849,7 +856,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

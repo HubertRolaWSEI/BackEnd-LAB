@@ -1,4 +1,4 @@
-﻿using ApplicationCore.Commons.Repository;
+using ApplicationCore.Commons.Repository;
 using ApplicationCore.Models.QuizAggregate;
 using BackendLab01;
 

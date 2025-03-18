@@ -2,10 +2,9 @@ using ApplicationCore.Models.QuizAggregate;
 using BackendLab01;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Dto;
-using WebAPI.Dto;
 
 namespace WebAPI.Controller;
- 
+
 [ApiController]
 [Route("api/v1/quizzes")]
 public class QuizController : ControllerBase
