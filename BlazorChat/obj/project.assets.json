@@ -247,6 +247,22 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Scalar.AspNetCore/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.Net.ServerSentEvents/9.0.0": {
         "type": "package",
         "compile": {
@@ -282,6 +298,9 @@
       "ApplicationCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Scalar.AspNetCore": "2.1.1"
+        },
         "compile": {
           "bin/placeholder/ApplicationCore.dll": {}
         },
@@ -684,6 +703,23 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Scalar.AspNetCore/2.1.1": {
+      "sha512": "7Z0O9oQ7N/O2nkruLFjr4JJe8GN0SlXsMePdsjTfC9fzTaK6u8al44n1veTQxfLtLhVMIMixqNRhIKBl7swBFw==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.1.1.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "System.Net.ServerSentEvents/9.0.0": {
       "sha512": "VTWjeyx9nPb4+hkjGcAaDw1nOckypMtvABmxSWm6PPYwrXoIiVG3jwtNlAGhaGVjDkBrERABox67wYTAcHxg7Q==",
       "type": "package",
@@ -751,43 +787,38 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "ApplicationCore >= 1.0.0",
-      "Microsoft.AspNetCore.SignalR.Client >= 9.0.0"
+      "Microsoft.AspNetCore.SignalR.Client >= 9.0.0",
+      "Scalar.AspNetCore >= 2.1.1"
     ]
   },
   "packageFolders": {
-    "D:\\Users\\hubert.rola\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\huber\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
+      "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
       "projectName": "BlazorChat",
-      "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
-      "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\BlazorChat\\obj\\",
+      "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\BlazorChat.csproj",
+      "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\BlazorChat\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         }
@@ -800,9 +831,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+        "auditMode": "all"
+      }
     },
     "frameworks": {
       "net9.0": {
@@ -811,6 +841,10 @@
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           }
         },
         "imports": [
@@ -832,7 +866,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

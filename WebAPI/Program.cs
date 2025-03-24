@@ -1,24 +1,24 @@
 using ApplicationCore.Commons.Repository;
 using BackendLab01;
-using Infrastructure.Memory;
+using Infrastructure.Memory.Generators;
 using Infrastructure.Memory.Repositories;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddOpenApi(); // Rejestracja OpenAPI
 builder.Services.AddControllers();
-builder.Services.AddRazorPages();
+builder.Services.AddTransient<IGenericGenerator<int>, IntGenerator>();
 builder.Services.AddSingleton(typeof(IGenericRepository<,>), typeof(MemoryGenericRepository<,>));
 builder.Services.AddSingleton<IQuizUserService, QuizUserService>();
-builder.Services.AddSingleton<IQuizAdminService, QuizAdminService>();
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.MapOpenApi(); 
 }
 
 app.UseHttpsRedirection();
@@ -43,7 +43,9 @@ app.MapGet("/weatherforecast", () =>
     .WithName("GetWeatherForecast");
 
 app.MapControllers();
-app.Seed();
+
+
+app.MapScalarApiReference();
 
 app.Run();
 

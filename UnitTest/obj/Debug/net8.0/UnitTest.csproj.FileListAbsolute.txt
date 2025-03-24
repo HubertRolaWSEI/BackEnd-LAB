@@ -126,14 +126,6 @@ C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\UnitTest.pdb
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -228,3 +220,4 @@ C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\obj\Debug\net8.0\refint\UnitTe
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\obj\Debug\net8.0\UnitTest.pdb
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\obj\Debug\net8.0\UnitTest.genruntimeconfig.cache
 C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\obj\Debug\net8.0\ref\UnitTest.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\UnitTest\bin\Debug\net8.0\Scalar.AspNetCore.dll

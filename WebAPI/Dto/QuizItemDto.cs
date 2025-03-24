@@ -1,38 +1,24 @@
 using ApplicationCore.Models.QuizAggregate;
- 
-namespace WebAPI.Dto;
- 
-public class QuizItemDto 
+
+namespace Dto;
+
+public class QuizItemDto
 {
     public int Id { get; set; }
     public string Question { get; set; }
     public List<string> Options { get; set; }
- 
-    /*public static QuizItemDto of(QuizItem quizItem)
-    {
-        var allOptions = new List<string>(quizItem.IncorrectAnswers)
-        {
-            quizItem.CorrectAnswer
-        };
 
-        return new QuizItemDto
-        {
-            Id = quizItem.Id,
-            Question = quizItem.Question,
-            Options = allOptions.OrderBy(option => option).ToList()
-        };
-    }*/
-     
-    public static QuizItemDto of(QuizItem quiz)
+    public QuizItemDto(int id, string question, List<string> options)
     {
-        return new QuizItemDto
-        {
-            Id = quiz.Id,
-            Question = quiz.Question,
-            Options = quiz.IncorrectAnswers
-                .Concat(new[] { quiz.CorrectAnswer })
-                .OrderBy(option => option)
-                .ToList()
-        };
+        Id = id;
+        Question = question;
+        Options = options;
+    }
+
+    public static QuizItemDto Of(QuizItem quiz)
+    {
+        var options = new List<string>(quiz.IncorrectAnswers) { quiz.CorrectAnswer };
+        options = options.OrderBy(x => Guid.NewGuid()).ToList(); // Randomize order
+        return new QuizItemDto(quiz.Id, quiz.Question, options);
     }
 }

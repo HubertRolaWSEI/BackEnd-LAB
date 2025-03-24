@@ -1,15 +1,8 @@
-namespace WebAPI.Dto;
+namespace Dto;
 
-public class UserQuizResultDto
+public class QuizScoreDto
 {
     public int QuizId { get; set; }
     public int UserId { get; set; }
-    public int CorrectAnswersCount { get; set; }
-
-    public UserQuizResultDto(int quizId, int userId, int correctAnswersCount)
-    {
-        QuizId = quizId;
-        UserId = userId;
-        CorrectAnswersCount = correctAnswersCount;
-    }
+    public int CorrectAnswers { get; set; }
 }

@@ -945,3 +945,4 @@ D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\Web\obj\Debug\net9.0\refint\Web.d
 D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\Web\obj\Debug\net9.0\Web.pdb
 D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\Web\obj\Debug\net9.0\Web.genruntimeconfig.cache
 D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\Web\obj\Debug\net9.0\ref\Web.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\Web\bin\Debug\net9.0\Scalar.AspNetCore.dll

@@ -1695,6 +1695,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3215,6 +3231,9 @@
       "ApplicationCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Scalar.AspNetCore": "2.1.1"
+        },
         "compile": {
           "bin/placeholder/ApplicationCore.dll": {}
         },
@@ -3227,7 +3246,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ApplicationCore": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.3"
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Scalar.AspNetCore": "2.1.1"
         },
         "compile": {
           "bin/placeholder/Infrastructure.dll": {}
@@ -4931,6 +4951,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6451,6 +6487,9 @@
       "ApplicationCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Scalar.AspNetCore": "2.1.1"
+        },
         "compile": {
           "bin/placeholder/ApplicationCore.dll": {}
         },
@@ -6463,7 +6502,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "ApplicationCore": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.3"
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Scalar.AspNetCore": "2.1.1"
         },
         "compile": {
           "bin/placeholder/Infrastructure.dll": {}
@@ -8936,6 +8976,23 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Scalar.AspNetCore/2.1.1": {
+      "sha512": "7Z0O9oQ7N/O2nkruLFjr4JJe8GN0SlXsMePdsjTfC9fzTaK6u8al44n1veTQxfLtLhVMIMixqNRhIKBl7swBFw==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.1.1.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -12749,64 +12806,60 @@
     "net8.0": [
       "ApplicationCore >= 1.0.0",
       "Infrastructure >= 1.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.4",
+      "Scalar.AspNetCore >= 2.1.1"
     ],
     "net9.0": [
       "ApplicationCore >= 1.0.0",
       "Infrastructure >= 1.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.4",
+      "Scalar.AspNetCore >= 2.1.1"
     ]
   },
   "packageFolders": {
-    "D:\\Users\\hubert.rola\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\huber\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
+      "projectUniqueName": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
-      "packagesPath": "D:\\Users\\hubert.rola\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Web\\obj\\",
+      "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\Web.csproj",
+      "packagesPath": "C:\\Users\\huber\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Web\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "D:\\Users\\hubert.rola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\huber\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0",
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
             }
           }
         },
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -12819,9 +12872,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+        "auditMode": "all"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -12830,6 +12882,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.4, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           }
         },
         "imports": [
@@ -12851,7 +12907,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0": {
         "targetAlias": "net9.0",
@@ -12859,6 +12915,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.4, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           }
         },
         "imports": [
@@ -12880,8 +12940,87 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\huber\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NuGet.Common' 6.3.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-6qmf-mmc7-6c2p",
+      "libraryId": "NuGet.Common",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NuGet.Packaging' 6.3.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-68w7-72jg-6qpp",
+      "libraryId": "NuGet.Packaging",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NuGet.Protocol' 6.3.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-6qmf-mmc7-6c2p",
+      "libraryId": "NuGet.Protocol",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Formats.Asn1' 5.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm",
+      "libraryId": "System.Formats.Asn1",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Net.Http' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7jgj-8wvc-jh57",
+      "libraryId": "System.Net.Http",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Json' 6.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.RegularExpressions' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cmhx-cq75-c4mj",
+      "libraryId": "System.Text.RegularExpressions",
+      "targetGraphs": [
+        "net8.0",
+        "net9.0"
+      ]
+    }
+  ]
 }

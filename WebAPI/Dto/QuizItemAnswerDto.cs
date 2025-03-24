@@ -1,5 +1,5 @@
-namespace WebAPI.Dto;
- 
+namespace Dto;
+
 public class QuizItemAnswerDto
 {
     public int UserId { get; set; }

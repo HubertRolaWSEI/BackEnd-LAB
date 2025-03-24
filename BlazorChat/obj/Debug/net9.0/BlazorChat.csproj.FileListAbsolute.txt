@@ -174,3 +174,4 @@ D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\refin
 D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\BlazorChat.pdb
 D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\BlazorChat.genruntimeconfig.cache
 D:\Users\hubert.rola\RiderProjects\BackEnd-LAB\BlazorChat\obj\Debug\net9.0\ref\BlazorChat.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\BlazorChat\bin\Debug\net9.0\Scalar.AspNetCore.dll

@@ -9,7 +9,8 @@
       "BlazorChat/1.0.0": {
         "dependencies": {
           "ApplicationCore": "1.0.0",
-          "Microsoft.AspNetCore.SignalR.Client": "9.0.0"
+          "Microsoft.AspNetCore.SignalR.Client": "9.0.0",
+          "Scalar.AspNetCore": "2.1.1"
         },
         "runtime": {
           "BlazorChat.dll": {}
@@ -103,6 +104,14 @@
         }
       },
       "Microsoft.Extensions.Primitives/9.0.0": {},
+      "Scalar.AspNetCore/2.1.1": {
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
       "System.Net.ServerSentEvents/9.0.0": {
         "runtime": {
           "lib/net9.0/System.Net.ServerSentEvents.dll": {
@@ -113,9 +122,12 @@
       },
       "System.Threading.Channels/9.0.0": {},
       "ApplicationCore/1.0.0": {
+        "dependencies": {
+          "Scalar.AspNetCore": "2.1.1"
+        },
         "runtime": {
           "ApplicationCore.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -225,6 +237,13 @@
       "sha512": "sha512-N3qEBzmLMYiASUlKxxFIISP4AiwuPTHF5uCh+2CWSwwzAJiIYx0kBJsS30cp1nvhSySFAVi30jecD307jV+8Kg==",
       "path": "microsoft.extensions.primitives/9.0.0",
       "hashPath": "microsoft.extensions.primitives.9.0.0.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7Z0O9oQ7N/O2nkruLFjr4JJe8GN0SlXsMePdsjTfC9fzTaK6u8al44n1veTQxfLtLhVMIMixqNRhIKBl7swBFw==",
+      "path": "scalar.aspnetcore/2.1.1",
+      "hashPath": "scalar.aspnetcore.2.1.1.nupkg.sha512"
     },
     "System.Net.ServerSentEvents/9.0.0": {
       "type": "package",

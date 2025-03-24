@@ -716,3 +716,4 @@ C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\staticwebassets
 C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\WebAPI.csproj.Up2Date
 C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\WebAPI.genruntimeconfig.cache
 C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\ref\WebAPI.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\Scalar.AspNetCore.dll

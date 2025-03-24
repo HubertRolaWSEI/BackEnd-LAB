@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hcbIwmAD/+s=",
+  "dgSpecHash": "sA/F8YwQRCI=",
   "success": true,
-  "projectFilePath": "D:\\Users\\hubert.rola\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\huber\\RiderProjects\\BackEnd-LAB\\ApplicationCore\\ApplicationCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\huber\\.nuget\\packages\\scalar.aspnetcore\\2.1.1\\scalar.aspnetcore.2.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

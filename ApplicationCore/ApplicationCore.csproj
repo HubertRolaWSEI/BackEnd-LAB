@@ -11,4 +11,8 @@
       <Folder Include="Commons" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Scalar.AspNetCore" Version="2.1.1" />
+    </ItemGroup>
+
 </Project>
