@@ -1,4 +1,16 @@
 @WebAPI_HostAddress = http://localhost:5172
 
-GET {{WebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+PATCH {{WebAPI_HostAddress}}/api/v1/admin/quizzes/1
+Content-Type: application/json-patch+json
+
+[
+  {
+    "op": "add",
+    "path": "/items/-",
+    "value": {
+      "question": "4*7",
+      "correctAnswer": "28",
+      "incorrectAnswers": ["26","27","29"]
+    }
+  }
+]

@@ -717,3 +717,10 @@ C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\WebAPI.csproj.U
 C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\WebAPI.genruntimeconfig.cache
 C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\obj\Debug\net9.0\ref\WebAPI.dll
 C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\Scalar.AspNetCore.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\huber\RiderProjects\BackEnd-LAB\WebAPI\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
